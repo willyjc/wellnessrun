@@ -6,6 +6,7 @@
 body{
 	font-family: 'poppins', sans-serif;
 	background-color: lightblue; 
+	width:100%;
 }
 .navbar{
 	background-color: #1e9c95;
