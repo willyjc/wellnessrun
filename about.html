@@ -197,6 +197,24 @@ function menutoggle() {
   }
 }
 </script>
+
+<script>
+    function isMobile() {
+        return /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+    }
+
+    function openWhatsAppLink() {
+        const whatsappLink = "https://chat.whatsapp.com/Hc5ohgd3B7z2fiwHP7emZW";
+        
+        if (isMobile()) {
+            window.location.href = whatsappLink; // Opens link directly on mobile devices
+        } else {
+            alert("Please open this link on your mobile device with WhatsApp installed.");
+            // Optionally, redirect to WhatsApp Web for desktop users
+            // window.location.href = "https://web.whatsapp.com";
+        }
+    }
+</script>	
 <script src="script.js"></script>
 </body>
 </html>
